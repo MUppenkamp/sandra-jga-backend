@@ -11,7 +11,7 @@ import { PictureModule } from './picture/picture.module';
     MarkerModule,
     PictureModule,
     ConfigModule.forRoot(),
-    MongooseModule.forRoot(`mongodb+srv://${process.env.DATABASE_USER}:${process.env.DATABASE_PASSWORD}@sandras-jga-cluster.gks3rfx.mongodb.net/?appName=sandras-jga-cluster&retryWrites=true&w=majority`),
+    MongooseModule.forRoot(`mongodb+srv://${process.env.DATABASE_USER}:${process.env.DATABASE_PASSWORD}@sandras-jga-cluster.gks3rfx.mongodb.net/sandras-jga?appName=sandras-jga-cluster&retryWrites=true&w=majority`),
   ],
   controllers: [AppController],
   providers: [AppService],
